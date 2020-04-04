@@ -1,6 +1,11 @@
-// Author : Rupen Chitroda
+/**
+ * Built using CHelper plug-in
+ * Actual solution is at the top
+ *
+ * @author Rupen Chitroda
+ */
 
- import java.util.*;
+import java.util.*;
 
 public class Solution {
     private static Scanner sc;
