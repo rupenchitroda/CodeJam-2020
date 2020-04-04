@@ -1,5 +1,9 @@
-// Author : Rupen Chitroda
-
+/**
+ * Built using CHelper plug-in
+ * Actual solution is at the top
+ *
+ * @author Rupen Chitroda
+ */
 import java.util.*;
 
 public class Solution {
@@ -34,7 +38,7 @@ public class Solution {
         int r = ans_r(mat);
         int c = ans_c(mat);
 
-        System.out.println("Case #" + (tn++) + ": " + k + " " + r + " " + c);
+        System.out.println("Case #" + (tn++) + ": " + k + "" + r + "" + c);
     }
 
     private static int ans_r(int[][] mat){
