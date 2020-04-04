@@ -1,3 +1,5 @@
+# Author : Rupen Chitroda
+
 from itertools import combinations
 import numpy as np
 import sys
