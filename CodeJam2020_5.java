@@ -21,20 +21,14 @@ public class Solution {
         sc.nextLine();
 
         while(T-- > 0){
-            solve();
+            n = sc.nextInt();
+            k = sc.nextInt();
+            result(1,1,0);
+            if(!solved) {
+                System.out.println("Case #" + (tn++) + ": IMPOSSIBLE");
+            }
+            solved = false;
         }
-    }
-
-    private static void solve(){
-        n = sc.nextInt();
-        k = sc.nextInt();
-        result(1,1,0);
-        if(!solved) {
-            System.out.println("Case #" + (tn++) + ": IMPOSSIBLE");
-        }
-        solved = false;
-
-        return;
     }
 
     private static void result(int row, int col, int m) {
