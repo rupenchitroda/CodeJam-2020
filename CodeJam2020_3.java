@@ -1,4 +1,9 @@
-// Author : Rupen Chitroda
+/**
+ * Built using CHelper plug-in
+ * Actual solution is at the top
+ *
+ * @author Rupen Chitroda
+ */
 
 import java.util.*;
 
@@ -30,7 +35,7 @@ public class Solution {
         Map<int[], Integer> map = new HashMap<>();
 
         for (int i=0; i < mat.length; i++) {
-            for(int j=0; j<mat[i].length; i++) {
+            for(int j=0; j < mat[i].length; j++) {
                 mat[i][j] = sc.nextInt();
             }
             map.put(mat[i], i);
