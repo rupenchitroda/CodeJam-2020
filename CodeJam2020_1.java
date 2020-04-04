@@ -17,30 +17,26 @@ public class Solution {
         sc.nextLine();
 
         while(t-- > 0){
-            solve();
-        }
-    }
+            int size = sc.nextInt();
+            int [][] mat = new int[size][size];
 
-    private static void solve(){
-        int size = sc.nextInt();
-        int [][] mat = new int[size][size];
+            int k = 0;
 
-        int k = 0;
+            for (int i=0; i < mat.length; i++) {
+                for(int j=0; j < mat[i].length; j++) {
+                    mat[i][j] = sc.nextInt();
 
-        for (int i=0; i < mat.length; i++) {
-            for(int j=0; j < mat[i].length; j++) {
-                mat[i][j] = sc.nextInt();
-
-                if(i == j) k += mat[i][j];
+                    if(i == j) k += mat[i][j];
+                }
             }
+
+            int r = ans_r(mat);
+            int c = ans_c(mat);
+
+            System.out.println("Case #" + (tn++) + ": " + k + "" + r + "" + c);
         }
-
-        int r = ans_r(mat);
-        int c = ans_c(mat);
-
-        System.out.println("Case #" + (tn++) + ": " + k + "" + r + "" + c);
     }
-
+    
     private static int ans_r(int[][] mat){
         int res = 0;
 
